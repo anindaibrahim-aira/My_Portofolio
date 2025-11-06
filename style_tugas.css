@@ -1,0 +1,143 @@
+/* === STYLE PORTOFOLIO ANINDA === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0d1b2a;
+  transition: background 0.3s ease-in-out;
+}
+.navbar.scrolled {
+  background: #001d3d;
+}
+.navbar-brand {
+  font-weight: 600;
+  color: #ffd60a !important;
+}
+.nav-link {
+  color: #e0e1dd !important;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #ffd60a !important;
+}
+.image {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #003566, #001d3d);
+  color: #fff;
+  text-align: center;
+  padding: 120px 0;
+  transition: all 0.4s ease-in-out;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  animation: fadeInDown 1.5s ease;
+}
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeInUp 1.5s ease;
+}
+.hero .btn {
+  background-color: #ffd60a;
+  border: none;
+  font-weight: 600;
+  color: #000;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background-color: #ffc300;
+  transform: translateY(-3px);
+}
+
+/* ABOUT */
+#about {
+  padding: 80px 0;
+  background: #fff;
+}
+#about h2 {
+  color: #001d3d;
+  font-weight: 700;
+}
+#about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* PROJECTS */
+#projects {
+  background: #f1f3f5;
+  padding: 80px 0;
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card-title {
+  color: #003566;
+  font-weight: 600;
+}
+
+/* CONTACT */
+#contact {
+  background: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+#contact .btn {
+  background-color: #003566;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+#contact .btn:hover {
+  background-color: #001d3d;
+}
+
+/* FOOTER */
+footer {
+  background: #0d1b2a;
+  color: #e0e1dd;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #ffd60a;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ANIMASI */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
